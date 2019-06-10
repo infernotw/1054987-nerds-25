@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <nav class="main-nav">
+      <a href="#" class="main-nav__link-logo">
+        <img src="img/nerds-logo.svg" alt="Лого Nerds">
+      </a>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="index.html" class="main-nav__link">
+            Студия
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">
+            Клиенты
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="catalog.html" class="main-nav__link  main-nav__link--active">
+            Магазин
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">
+            Контакты
+          </a>
+        </li>
+      </ul>
+      <div class="main-nav__block">
+        <a href="#" class="main-nav__basket">
+          Корзина
+        </a>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="page-title">
+      <h1>Магазин готовых шаблонов</h1>
+    </section>
+
+    <section class="page-catalog">
+      <div class="page-catalog__filter">
+        <!--тут будет стоимость-->
+        <form action="https://echo.htmlacademy.ru/" method="GET">
+          <p class="page-catalog__name">Сетка:</p>
+          <label>
+            <input class="visually-hidden" type="radio" name="cell" value="Adaptive" checked>Адаптивная
+          </label>
+          <label>
+            <input class="visually-hidden" type="radio" name="cell" value="Fixed">Фиксированная
+          </label>
+          <label>
+            <input class="visually-hidden" type="radio" name="cell" value="Rubber">Резиновая
+          </label>
+          <p class="page-catalog__name">Особенности:</p>
+          <label>
+            <input class="visually-hidden" type="checkbox" value="Slider" name="Special" checked>Слайдер
+          </label>
+          <label>
+            <input class="visually-hidden" type="checkbox" value="Block" name="Special">Блок преимуществ
+          </label>
+          <label>
+            <input class="visually-hidden" type="checkbox" value="News" name="Special">Новости
+          </label>
+          <label>
+            <input class="visually-hidden" type="checkbox" value="Gallery" name="Special">Галерея
+          </label>
+          <label>
+            <input class="visually-hidden" type="checkbox" value="Basket" name="Special">Корзина
+          </label>
+          <button type="submit" class="submit">Показать</button>
+        </form>
+
+      </div>
+      <section>
+        <div class="page-catalog___sort">
+
+          <!--тут будет сортировка-->
+        </div>
+        <div class="page-catalog__items">
+          <ul class="page-catalog__list">
+            <li class="page-catalog__item">
+              <a href="#" class="page-catalog__link">
+                <img src="#" alt="Седона" class="page-catalog__img">
+              </a>
+            </li>
+            <li class="page-catalog__item">
+              <a href="#" class="page-catalog__link">
+                <img src="#" alt="Пинк" class="page-catalog__img">
+              </a>
+            </li>
+            <li class="page-catalog__item">
+              <a href="#" class="page-catalog__link">
+                <img src="#" alt="Барбершоп" class="page-catalog__img">
+              </a>
+            </li>
+            <li class="page-catalog__item">
+              <a href="#" class="page-catalog__link">
+                <img src="#" alt="Мишка" class="page-catalog__img">
+              </a>
+            </li>
+            <li class="page-catalog__item">
+              <a href="#" class="page-catalog__link">
+                <img src="#" alt="А+" class="page-catalog__img">
+              </a>
+            </li>
+            <li class="page-catalog__item">
+              <a href="#" class="page-catalog__link">
+                <img src="#" alt="Кваст" class="page-catalog__img">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </section>
+    <footer class="page-footer">
+      <section class="page-footer__map map">
+        <div class="map__block">
+          <div class="map__box">
+            <h3 class="map__title">Nёrds design studio</h3>
+            <p class="map__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <span class="map__call">
+              <span class="map__tel">тел.</span>
+              <a class="map__tel" href="tel:+78122757575">+7 (812) 275-75-75</a>
+            </span>
+          </div>
+          <button type="button" class="map__button">напишите нам</button>
+        </div>
+        <iframe src="https://yandex.ru/map-widget/v1/-/CCC6z-2X"></iframe>
+      </section>
+      <section class="page-footer__contacts">
+        <ul class="page-footer__list">
+          <li class="page-footer__item">
+            <a href="vk.com" class="page-footer__link page-footer__link--vk">
+            </a>
+          </li>
+          <li class="page-footer__item">
+            <a href="facebook.com" class="page-footer__link page-footer__link--facebook">
+            </a>
+          </li>
+          <li class="page-footer__item">
+            <a href="instagram.com" class="page-footer__link page-footer__link--instagram">
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__wrap">
+          <h3 class="page-footer__title">Давайте дружить, это выгодно!</h3>
+          <p class="page-footer__text">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </section>
+    </footer>
+
+  </main>
+</body>
+
+</html>
