@@ -44,28 +44,14 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="catalog-name">Магазин готовых шаблонов</h1>
+    <section class="page-title">
+      <h1>Магазин готовых шаблонов</h1>
+    </section>
+
     <section class="page-catalog">
       <div class="page-catalog__filter">
-        <form method="get" action="https://echo.htmlacademy.ru">
-          <fieldset class="filter-item">
-            <legend>Стоимость:</legend>
-            <div class="range-filter">
-              <div class="range-controls">
-                <div class="scale">
-                  <div class="bar" style="margin-left: 20%; width: 30%"></div>
-                </div>
-                <div class="toggle toggle-min"></div>
-                <div class="toggle toggle-max"></div>
-              </div>
-              <div class="price-controls">
-                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
-              </div>
-            </div>
-          </fieldset>
-        </form>
-        <form action="https://echo.htmlacademy.ru/" method="GET" class="page-filter">
+        <!--тут будет стоимость-->
+        <form action="https://echo.htmlacademy.ru/" method="GET">
           <p class="page-catalog__name">Сетка:</p>
           <label>
             <input class="visually-hidden" type="radio" name="cell" value="Adaptive" checked>Адаптивная
@@ -97,155 +83,84 @@
 
       </div>
       <section>
-        <div class="page-catalog__sort">
-          <p>Сортировать</p>
-          <ul class="sort-list">
-            <li class="sort-item sort-item--active">
-              <a href="#">По цене</a>
-            </li>
-            <li class="sort-item">
-              <a href="#">По типу</a>
-            </li>
-            <li class="sort-item">
-              <a href="#">По названию</a>
-            </li>
-          </ul>
-          <ul class="sort-direction">
-            <li class="sort-down sort-down--active">
+        <div class="page-catalog___sort">
 
-            </li>
-            <li class="sort-up">
-
-            </li>
-          </ul>
-
-
+          <!--тут будет сортировка-->
         </div>
         <div class="page-catalog__items">
           <ul class="page-catalog__list">
             <li class="page-catalog__item">
               <a href="#" class="page-catalog__link">
-                <div class="page-catalog__item-header">
-
-                </div>
-                <img src="img/img-sedona.png" alt="Седона" class="page-catalog__img" width="360" height="576">
-                <div class="page-catalog__item-info">
-                  <a href="#" class="page-catalog__item-name">Sedona</a>
-                  <p class="page-catalog__item-description">Информационный сайт для туристов</p>
-                  <a href="#" class="item__button">9 900 руб.</a>
-                </div>
+                <img src="#" alt="Седона" class="page-catalog__img">
               </a>
             </li>
             <li class="page-catalog__item">
               <a href="#" class="page-catalog__link">
-                <div class="page-catalog__item-header">
-
-                </div>
-                <img src="img/img-pink.png" alt="Пинк" class="page-catalog__img" width="360" height="576">
-                <div class="page-catalog__item-info">
-                  <a href="#" class="page-catalog__item-name">Pink app</a>
-                  <p class="page-catalog__item-description--long page-catalog__item-description--long">Продуктовый лендинг приложения для iOS и Android</p>
-                  <a href="#" class="item__button">9 900 руб.</a>
-                </div>
+                <img src="#" alt="Пинк" class="page-catalog__img">
               </a>
             </li>
             <li class="page-catalog__item">
               <a href="#" class="page-catalog__link">
-                <div class="page-catalog__item-header">
-                  
-                </div>
-                <img src="img/img-barbershop.png" alt="Барбершоп" class="page-catalog__img" width="360" height="576">
-                <div class="page-catalog__item-info">
-                  <a href="#" class="page-catalog__item-name">Barbershop</a>
-                  <p class="page-catalog__item-description">Сайт салона красоты. Для мужчин, да.</p>
-                  <a href="#" class="item__button">9 900 руб.</a>
-                </div>
+                <img src="#" alt="Барбершоп" class="page-catalog__img">
               </a>
             </li>
             <li class="page-catalog__item">
               <a href="#" class="page-catalog__link">
-                <div class="page-catalog__item-header">
-                  
-                </div>
-                <img src="img/img-mishka.png" alt="Мишка" class="page-catalog__img" width="360" height="576">
-                <div class="page-catalog__item-info">
-                  <a href="#" class="page-catalog__item-name">Mishka</a>
-                  <p class="page-catalog__item-description">Интернет-магазин вязаных игрушек</p>
-                  <a href="#" class="item__button">9 900 руб.</a>
-                </div>
+                <img src="#" alt="Мишка" class="page-catalog__img">
               </a>
             </li>
             <li class="page-catalog__item">
               <a href="#" class="page-catalog__link">
-                <div class="page-catalog__item-header">
-                  
-                </div>
-                <img src="img/img-aplus.png" alt="А+" class="page-catalog__img" width="360" height="576">
-                <div class="page-catalog__item-info">
-                  <a href="#" class="page-catalog__item-name">A plus</a>
-                  <p class="page-catalog__item-description page-catalog__item-description--long">Лендинг курсов повышения квалификации</p>
-                  <a href="#" class="item__button">9 900 руб.</a>
-                </div>
+                <img src="#" alt="А+" class="page-catalog__img">
               </a>
             </li>
             <li class="page-catalog__item">
               <a href="#" class="page-catalog__link">
-                <div class="page-catalog__item-header">
-                  
-                </div>
-                <img src="img/img-kvast.png" alt="Кваст" class="page-catalog__img" width="360" height="576">
-                <div class="page-catalog__item-info">
-                  <a href="#" class="page-catalog__item-name">Кваст</a>
-                  <p class="page-catalog__item-description page-catalog__item-description--long">Промо-сайт производителя крафтого кваса</p>
-                  <a href="#" class="item__button">9 900 руб.</a>
-                </div>
+                <img src="#" alt="Кваст" class="page-catalog__img">
               </a>
             </li>
           </ul>
         </div>
       </section>
     </section>
-  </main>
-  <footer class="page-footer">
-    <section class="page-footer__map block">
-      <div class="map__block">
-        <div class="map__box">
-          <h3 class="map__title">Nёrds design studio</h3>
-          <p class="map__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <span class="map__call">
-            <span class="map__tel">тел.</span>
-            <a class="map__tel" href="tel:+78122757575">+7 (812) 275-75-75</a>
-          </span>
+    <footer class="page-footer">
+      <section class="page-footer__map map">
+        <div class="map__block">
+          <div class="map__box">
+            <h3 class="map__title">Nёrds design studio</h3>
+            <p class="map__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <span class="map__call">
+              <span class="map__tel">тел.</span>
+              <a class="map__tel" href="tel:+78122757575">+7 (812) 275-75-75</a>
+            </span>
+          </div>
+          <button type="button" class="map__button">напишите нам</button>
         </div>
-        <a href="#" class="map__button">Напишите нам</a>
-      </div>
-    </section>
-    <section class="page-footer__map map">
-      <iframe src="https://yandex.ru/map-widget/v1/-/CCC6z-2X"></iframe>
-    </section>
-    <section class="page-footer__contacts">
-      <ul class="page-footer__list">
-        <li class="page-footer__item">
-          <a href="vk.com" class="page-footer__link page-footer__link--vk">
-          </a>
-        </li>
-        <li class="page-footer__item">
-          <a href="facebook.com" class="page-footer__link page-footer__link--facebook">
-          </a>
-        </li>
-        <li class="page-footer__item">
-          <a href="instagram.com" class="page-footer__link page-footer__link--instagram">
-          </a>
-        </li>
-      </ul>
-      <div class="page-footer__wrap">
-        <h3 class="page-footer__title">Давайте дружить, это выгодно!</h3>
-        <p class="page-footer__text">Скидка 10% для друзей из социальных сетей.</p>
-      </div>
-    </section>
-  </footer>
+        <iframe src="https://yandex.ru/map-widget/v1/-/CCC6z-2X"></iframe>
+      </section>
+      <section class="page-footer__contacts">
+        <ul class="page-footer__list">
+          <li class="page-footer__item">
+            <a href="vk.com" class="page-footer__link page-footer__link--vk">
+            </a>
+          </li>
+          <li class="page-footer__item">
+            <a href="facebook.com" class="page-footer__link page-footer__link--facebook">
+            </a>
+          </li>
+          <li class="page-footer__item">
+            <a href="instagram.com" class="page-footer__link page-footer__link--instagram">
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__wrap">
+          <h3 class="page-footer__title">Давайте дружить, это выгодно!</h3>
+          <p class="page-footer__text">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </section>
+    </footer>
 
-
+  </main>
 </body>
 
 </html>
