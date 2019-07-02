@@ -21,6 +21,7 @@ a {
 /*Слайдер*/
 .container {
   margin: 0 auto;
+  padding: 0 20px 0;
   box-sizing: border-box;
   max-width: 1200px;
 }
@@ -189,15 +190,16 @@ a {
 .main-nav {
   display: flex;
   align-items: center;
-  padding-top: 49px;
   background-color: #eeeeee;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 49px 20px 0;
+  box-sizing: border-box;
 }
 
 .page-main {
   margin-bottom: 86px;
-
+  min-width: 1440px;
 }
 
 .main-nav__list {
@@ -279,6 +281,10 @@ a {
   opacity: 0.4;
 }
 
+.page-footer {
+  min-width: 1440px;
+}
+
 .work__list,
 .about__list,
 .about__roster,
@@ -290,8 +296,8 @@ a {
 }
 
 .work {
-  padding-top: 81px;
-  padding-bottom: 83px;
+  padding: 81px 20px 83px;
+  box-sizing: border-box;
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
@@ -299,6 +305,7 @@ a {
 
 .page-header {
   background-color: #eeeeee;
+  min-width: 1440px;
 }
 
 .work::after,
@@ -309,8 +316,8 @@ a {
   height: 2px;
   width: 1160px;
   position: absolute;
-  bottom: -5px;
-  left: 140px;
+  bottom: 0px;
+  left: 20px;
   background-color: #eeeeee;
 }
 
@@ -409,6 +416,22 @@ a {
   height: 50px;
 }
 
+.map {
+  width: 100%;
+  height: 416px;
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: 100% 416px;
+}
+
+map::before {
+  content: '';
+  position: absolute;
+  background-image: url("../img/map-marker.png");
+
+}
+
 .map__button:hover,
 .map__button:focus {
   background-color: #e74246;
@@ -438,10 +461,10 @@ a {
 }
 
 .about {
+  box-sizing: border-box;
+  padding: 73px 20px 50px;
   display: flex;
-  padding-top: 73px;
   position: relative;
-  padding-bottom: 50px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -536,6 +559,8 @@ a {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px 0;
+  box-sizing: border-box;
 }
 
 .friends__list {
@@ -612,6 +637,7 @@ a {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  z-index: 10;
 }
 
 .map__button {
@@ -633,6 +659,8 @@ a {
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0px 20px 0;
+  box-sizing: border-box;
 }
 
 .page-footer__title {
@@ -860,6 +888,8 @@ a {
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 20px 0;
 }
 
 .page-filter {
@@ -932,11 +962,10 @@ a {
 .catalog-name {
   text-align: center;
   font-size: 55px;
-  height: 60px;
-  padding: 90px 0;
+  padding: 94px 20px 124px;
   margin: 0 auto;
   background-color: #eeeeee;
-  margin-bottom: 60px;
+  margin-bottom: 58px;
 }
 
 .page-catalog__item {
@@ -950,7 +979,6 @@ a {
 
 .page-catalog__item:hover,
 .page-catalog__item:focus {
-  background-color: #4d4d4d;
   border-color: #4d4d4d;
 }
 
