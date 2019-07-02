@@ -68,40 +68,66 @@
           </fieldset>
         </form>
         <form action="https://echo.htmlacademy.ru/" method="GET" class="page-filter">
-          <p class="page-catalog__name">Сетка:</p>
-          <label>
-            <input class="visually-hidden" type="radio" name="cell" value="Adaptive" checked>Адаптивная
-          </label>
-          <label>
-            <input class="visually-hidden" type="radio" name="cell" value="Fixed">Фиксированная
-          </label>
-          <label>
-            <input class="visually-hidden" type="radio" name="cell" value="Rubber">Резиновая
-          </label>
-          <p class="page-catalog__name">Особенности:</p>
-          <label>
-            <input class="visually-hidden" type="checkbox" value="Slider" name="Special" checked>Слайдер
-          </label>
-          <label>
-            <input class="visually-hidden" type="checkbox" value="Block" name="Special">Блок преимуществ
-          </label>
-          <label>
-            <input class="visually-hidden" type="checkbox" value="News" name="Special">Новости
-          </label>
-          <label>
-            <input class="visually-hidden" type="checkbox" value="Gallery" name="Special">Галерея
-          </label>
-          <label>
-            <input class="visually-hidden" type="checkbox" value="Basket" name="Special">Корзина
-          </label>
-          <button type="submit" class="submit">Показать</button>
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="cell" value="Adaptive"
+                  id="filter-adaptive" checked>
+                <label for="filter-adaptive">Адаптивная</label>
+
+              </li>
+              <li class="filter-option">
+
+                <input class="visually-hidden filter-input filter-input-radio" id="filter-fixed" type="radio"
+                  name="cell" value="Fixed">
+                <label for="filter-fixed">Фиксированная</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" id="filter-rubber" type="radio"
+                  name="cell" value="Rubber">
+                <label for="filter-rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" id="filter-special-slider"
+                  type="checkbox" value="Slider" name="Special" checked>
+                <label for="filter-special-slider">Слайдер</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" id="filter-special-block"
+                  type="checkbox" value="Block" name="Special">
+                <label for="filter-special-block">Блок преимуществ</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" id="filter-special-news"
+                  type="checkbox" value="News" name="Special">
+                <label for="filter-special-news">Новости</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" id="filter-special-gallery"
+                  type="checkbox" value="Gallery" name="Special">
+                <label for="filter-special-gallery">Галерея</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" id="filter-special-basket"
+                  type="checkbox" value="Basket" name="Special">
+                <label for="filter-special-basket">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <a href="#" class="submit">Показать</a>
         </form>
 
       </div>
-      <section>
+      <section class="page-catalog__work">
         <h2 class="visually-hidden">Сортировка</h2>
         <div class="page-catalog__sort">
-          <p>Сортировать</p>
+          <p class="page-catalog__">Сортировать:</p>
           <ul class="sort-list">
             <li class="sort-item sort-item--active">
               <a href="#">По цене</a>
@@ -115,14 +141,10 @@
           </ul>
           <ul class="sort-direction">
             <li class="sort-down sort-down--active">
-
             </li>
             <li class="sort-up">
-
             </li>
           </ul>
-
-
         </div>
         <div class="page-catalog__items">
           <h2 class="visually-hidden">Каталог товаров</h2>
@@ -212,12 +234,28 @@
             </li>
           </ul>
         </div>
+        <section class="pages">
+          <ul class="pages__list-button">
+            <li class="pages__button">
+              <a href="#" class="pages__page-button-active">1</a>
+            </li>
+            <li class="pages__button">
+              <a href="#" class="pages__page-button">2</a>
+            </li>
+            <li class="pages__button">
+              <a href="#" class="pages__page-button">3</a>
+            </li>
+            <li class="pages__button">
+              <a href="#" class="pages__page-button pages__page-button--next">Следующая</a>
+            </li>
+          </ul>
+        </section>
       </section>
     </section>
   </main>
   <footer class="page-footer">
     <section class="page-footer__map block">
-      <h2 class="visually-hidden">Адрес</h2>>
+      <h2 class="visually-hidden">Адрес</h2>
       <div class="map__block">
         <div class="map__box">
           <h3 class="map__title">Nёrds design studio</h3>
@@ -256,7 +294,26 @@
       </div>
     </section>
   </footer>
-
+  <form class="write-us-form" action="/auth" method="post">
+    <a class="write-us-form-close" href="#">Закрыть</a>
+    <fieldset class="name">
+      <label for="name">Ваше имя:</label>
+      <input id="name" name="name" type="text" placeholder="Представьтесь, пожалуйста">
+    </fieldset>
+    <fieldset class="email">
+      <label for="email">Ваш e-mail:</label>
+      <input id="email" name="email" type="email" placeholder="Для отправки ответа">
+    </fieldset>
+    <fieldset class="free-text">
+      <label for="free-text">Текст письма:</label>
+      <textarea id="free-text" name="free-text" placeholder="В свободной форме"></textarea>
+    </fieldset>
+    <fieldset class="input-buttons clearfix">
+      <input type="submit" value="Отправить">
+      <input type="reset" value="Отмена" name="reset">
+    </fieldset>
+  </form>
+  <script src="js/script.js"></script>
 
 </body>
 

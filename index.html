@@ -201,6 +201,26 @@
       </div>
     </section>
   </footer>
+  <form class="write-us-form" action="/auth" method="post">
+    <a class="write-us-form-close" href="#">Закрыть</a>
+    <fieldset class="name">
+      <label for="name">Ваше имя:</label>
+      <input id="name" name="name" type="text" placeholder="Представьтесь, пожалуйста">
+    </fieldset>
+    <fieldset class="email">
+      <label for="email">Ваш e-mail:</label>
+      <input id="email" name="email" type="email" placeholder="Для отправки ответа">
+    </fieldset>
+    <fieldset class="free-text">
+      <label for="free-text">Текст письма:</label>
+      <textarea id="free-text" name="free-text" placeholder="В свободной форме"></textarea>
+    </fieldset>
+    <fieldset class="input-buttons clearfix">
+      <input type="submit" value="Отправить">
+      <input type="reset" value="Отмена" name="reset">
+    </fieldset>
+  </form>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
