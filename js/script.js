@@ -1,5 +1,5 @@
 var
-  link = document.querySelector(".map__button"),
+  link = document.querySelector(".map-info__button"),
   popup = document.querySelector(".write-us-form"),
   close = popup.querySelector(".write-us-form-close"),
   form = document.querySelector(".write-us-form"),
